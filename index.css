@@ -1,0 +1,48 @@
+.parent-container{
+    display: flex;
+}
+.child-container{
+    flex: 1;
+}
+#container{
+    margin-top: 80px;
+    margin-right: 100px;
+}
+.feed{
+    padding: 40px;
+}
+
+.img-child{
+    width: 70%;
+}
+h1{
+    font-size: 75px;
+}
+@media screen and (max-width: 600px) {
+    .parent-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    .feed > h1{
+        font-size: 24px;
+    }
+
+    .col > img{
+        align-self: center;
+        width: 100%;
+    }
+
+    .feed .btn-dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
